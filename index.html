@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Elecciones Perú 2026</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body style="font-family:Arial;text-align:center;background:#0b132b;color:white">
+
+<h1>📊 Panel Electoral Perú 2026</h1>
+
+<p>Resultados simulados para análisis de tendencias</p>
+
+<canvas id="grafico" width="400" height="200"></canvas>
+
+<script>
+
+const ctx = document.getElementById('grafico');
+
+new Chart(ctx, {
+ type: 'bar',
+ data: {
+  labels: ['Candidato A','Candidato B','Candidato C','Candidato D'],
+  datasets: [{
+   label: '% de votos',
+   data: [30, 25, 23, 22]
+  }]
+ }
+});
+
+</script>
+
+</body>
+</html>
